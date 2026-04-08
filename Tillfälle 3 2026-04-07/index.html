@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tillfälle 3</h1>
+  </body>
+
+  <!--- <script src="script.js"></script>
+-->
+
+  <script>
+    for (let i = 0; i <= 9; i++) {
+      //console.log(i%2);
+      if (i % 2 == 0) console.log("o");
+      else console.log("x");
+    }
+
+    //part2
+
+    let array = [
+      "    O",
+      "O ",
+      "  O",
+      "O  ",
+      "O",
+      "O",
+      "O",
+      "   O",
+      " O  ",
+      "O     ",
+      "O",
+      "  O",
+      "   O",
+      "O",
+      "   O",
+      " O  ",
+      "O     ",
+      "O",
+      "  O",
+      "   O",
+    ];
+
+    for (let i = 0; i < array.length; i++) {
+      console.log(array[i]);
+    }
+
+    //tagit hjälp av video
+
+    let resultat = "";
+    for (let y = 0; y < 20; y++) {
+      resultat += "O";
+
+      let randomTal = Math.random() * 5;
+      let avrundatTal = Math.round(randomTal);
+      console.log(avrundatTal);
+
+      for (let x = 0; x < avrundatTal; x++) {
+        resultat += " ";
+      }
+    }
+
+    console.log(resultat);
+
+    //part3 (tagit hjälp av tidigare lektionsvideo)
+
+    let cityNames = ["kiruna", "uppsala", "malmö", "othenburg", "stockholm"];
+    for (let q = 0; q < cityNames.length; q++) {
+      //console.log(cityNames[q])
+
+      let city = cityNames[q];
+      for (let q = 0; q < city.length; q++) console.log(city[q]);
+    }
+  </script>
+</html>
